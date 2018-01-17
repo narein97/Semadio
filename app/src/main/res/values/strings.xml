@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">semadio</string>
+    <string name="english">English</string>
+    <string name="hindi">Hindi</string>
+    <string name="kannada">Kannada</string>
+    <string name="most_viewed">Most Viewed</string>
+    <string name="tamil">Tamil</string>
+    <string name="textview">TextView</string>
+    <string name="for_video_embedding">For video embedding</string>
+    <string name="likes_views">Likes Views</string>
+    <string name="video">Video</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="welcome_user">Welcome, User!</string>
+    <string name="welcome_uploader">Welcome Uploader!</string>
+    <string name="total_views">Total Views:</string>
+    <string name="number_of_videos">Number of Videos:</string>
+    <string name="statistics">Statistics:</string>
+    <string name="number_of_likes">Number of Likes:</string>
+    <string name="number_of_views">Number of Views:</string>
+    <string name="upload">Upload</string>
+</resources>
