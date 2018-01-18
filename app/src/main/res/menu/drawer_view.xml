@@ -3,28 +3,28 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="home"
+            android:id="@+id/home"
             android:icon="@drawable/one"
             android:title="Home"
             android:checked="true"/>
         <item
-            android:id="recent"
+            android:id="@+id/recent"
             android:icon="@drawable/two"
             android:title="Recent" />
         <item
-            android:id="dashboard"
+            android:id="@+id/dashboard"
             android:icon="@drawable/three"
             android:title="@string/dashboard1" />
         <item
-            android:id="liked"
+            android:id="@+id/liked"
             android:icon="@drawable/four"
             android:title="Liked" />
         <item
-            android:id="settings"
+            android:id="@+id/settings"
             android:icon="@drawable/five"
             android:title="Settings" />
         <item
-            android:id="logout"
+            android:id="@+id/logout"
             android:icon="@drawable/six"
             android:title="Logout" />
     </group>

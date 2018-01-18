@@ -23,4 +23,6 @@
     <string name="file_name">File Name</string>
     <string name="thumbnail">Thumbnail</string>
     <string name="dashboard1">Dashboard</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
 </resources>
