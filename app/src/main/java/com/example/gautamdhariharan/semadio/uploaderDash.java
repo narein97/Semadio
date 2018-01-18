@@ -1,7 +1,9 @@
 package com.example.gautamdhariharan.semadio;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -33,7 +35,12 @@ public class uploaderDash extends AppCompatActivity {
         textView.setHeight(height/3);
         textView = (TextView)findViewById(R.id.vid3);
         textView.setHeight(height/3);
+        Button upl=(Button) findViewById(R.id.uploadb);
 
+    }
+    public void uploadS(View v){
+        Intent i= new Intent(this, uploaderScreen.class);
+        startActivity(i);
     }
 
 }

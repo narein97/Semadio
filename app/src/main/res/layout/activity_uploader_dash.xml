@@ -111,7 +111,8 @@
                 android:layout_height="match_parent"
                 android:background="@color/background"
                 android:text="@string/upload"
-                android:textColor="@color/text" />
+                android:textColor="@color/text"
+                android:onClick="uploadS"/>
 
             <TextView
                 android:id="@+id/vid1"
