@@ -13,7 +13,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import static com.example.gautamdhariharan.semadio.R.id.imgView;
+
 
 public class uploaderScreen extends AppCompatActivity {
 
@@ -26,6 +26,13 @@ public class uploaderScreen extends AppCompatActivity {
         ScreenParam sp=new ScreenParam();
         int height=sp.getScreenHeight(this);
         int width=sp.getScreenWidth(this);
+        TextView text=(TextView) findViewById(R.id.tv1);
+
+        TextView text2=(TextView) findViewById(R.id.tv3);
+        text.setWidth(width);
+        text.setHeight(height/10);
+        text2.setWidth(width);
+        text2.setHeight(height/10);
         Button buttonLoadImage = (Button) findViewById(R.id.button2);
         buttonLoadImage.setOnClickListener(new View.OnClickListener() {
 
@@ -61,12 +68,8 @@ public class uploaderScreen extends AppCompatActivity {
 
             TextView tv=(TextView) findViewById(R.id.textView5);
             tv.setText(picturePath);
-            ImageView imageView = (ImageView) findViewById(imgView);
 
 
-
-
-            imageView.setImageBitmap(BitmapFactory.decodeFile(picturePath));
 
         }
 
