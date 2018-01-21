@@ -1,8 +1,11 @@
-package com.example.gautamdhariharan.semadio;
+package com.example.gautamdhariharan.semadio.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.example.gautamdhariharan.semadio.R;
+import com.example.gautamdhariharan.semadio.other.ScreenParam;
 
 public class video extends AppCompatActivity {
 

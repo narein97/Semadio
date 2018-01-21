@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item android:title="Menu">
+            <menu>
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"/>
+        <item
+            android:id="@+id/nav_mp"
+            android:title="@string/nav_mp"
+            android:icon="@drawable/ic_movie_black_24dp"/>
+        <item
+            android:id="@+id/nav_ma"
+            android:title="@string/nav_ma"
+            android:icon="@drawable/ic_dashboard_black_24dp"/>
+        <item
+            android:id="@+id/nav_notifications"
+            android:title="@string/nav_notifications"
+            android:icon="@drawable/ic_notifications_black_24dp"/>
+        <item
+            android:id="@+id/nav_settings"
+            android:title="@string/nav_settings"
+            android:icon="@drawable/ic_settings_black_24dp"/>
+            </menu>
+        </item>
+    </group>
+    <group>
+        <item android:title="Support">
+            <menu>
+        <item
+            android:id="@+id/nav_about_us"
+            android:title="@string/nav_about_us"/>
+        <item
+            android:id="@+id/privacy_policy"
+            android:title="@string/privacy_policy"/>
+            </menu>
+        </item>
+    </group>
+</menu>
