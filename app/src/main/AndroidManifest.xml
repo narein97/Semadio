@@ -13,7 +13,7 @@
         android:screenOrientation="sensor"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".homeScreen">
+        <activity android:name=".activity.main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,10 +21,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".video"
+            android:name=".activity.video"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
-        <activity android:name=".uploaderDash" />
-        <activity android:name=".uploaderScreen"></activity>
+        <activity android:name=".activity.uploaderScreen" />
+        <activity android:name=".activity.AboutUs" />
+        <activity android:name=".activity.PrivacyPolicy"></activity>
     </application>
 
 </manifest>
