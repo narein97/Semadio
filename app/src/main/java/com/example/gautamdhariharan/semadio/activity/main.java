@@ -1,4 +1,5 @@
 package com.example.gautamdhariharan.semadio.activity;
+//rtmp
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -341,6 +342,9 @@ public class main extends AppCompatActivity {
         if (id == R.id.action_logout) {
             Toast.makeText(getApplicationContext(), "Logout user!", Toast.LENGTH_LONG).show();
             return true;
+        }
+        if(id==R.id.search){
+            
         }
 
         if(id == R.id.upload){
