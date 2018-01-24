@@ -30,6 +30,7 @@ import com.example.gautamdhariharan.semadio.fragment.NotificationsFragment;
 import com.example.gautamdhariharan.semadio.fragment.MyAccountFragment;
 import com.example.gautamdhariharan.semadio.fragment.SettingsFragment;
 import com.example.gautamdhariharan.semadio.other.CircleTransform;
+import com.miguelcatalan.materialsearchview.MaterialSearchView;
 
 public class main extends AppCompatActivity {
 
@@ -39,6 +40,8 @@ public class main extends AppCompatActivity {
     private ImageView imgNavHeaderBg, imgProfile;
     private TextView txtName, txtWebsite;
     private Toolbar toolbar;
+    MaterialSearchView msv;
+    String[] list;
 
 
     // urls to load navigation header background image
@@ -71,11 +74,26 @@ public class main extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        list=new String[]{"Video1","Video2","Video3","Video4","Video5","Video6"};
 
         mHandler = new Handler();
 
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         navigationView = (NavigationView) findViewById(R.id.nav_view);
+        msv=(MaterialSearchView) findViewById(R.id.mysearch);
+        msv.closeSearch();
+        msv.setSuggestions(list);
+        msv.setOnQueryTextListener(new MaterialSearchView.OnQueryTextListener(){
+
+            @Override
+            public boolean onQueryTextSubmit(String query){
+                return false;
+            }
+            @Override
+            public boolean onQueryTextChange(String newText){
+                return false;
+            }
+        });
 
         // Navigation view header
         navHeader = navigationView.getHeaderView(0);
@@ -99,6 +117,7 @@ public class main extends AppCompatActivity {
             CURRENT_TAG = TAG_HOME;
             loadHomeFragment();
         }
+
     }
 
     /***
@@ -318,6 +337,10 @@ public class main extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.home_screen, menu);
+        MenuItem item=menu.findItem(R.id.search);
+        msv.setMenuItem(item);
+
 
         // show menu only when home fragment is selected
         if (navItemIndex == 0) {
@@ -328,6 +351,7 @@ public class main extends AppCompatActivity {
         if (navItemIndex == 3) {
             getMenuInflater().inflate(R.menu.notifications, menu);
         }
+
         return true;
     }
 
@@ -344,7 +368,7 @@ public class main extends AppCompatActivity {
             return true;
         }
         if(id==R.id.search){
-            
+
         }
 
         if(id == R.id.upload){
