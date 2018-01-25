@@ -221,9 +221,6 @@ public class HomeFragment extends Fragment {
 
     }
 
-    public void click(View v){
-        Intent i = new Intent(HomeFragment.this.getActivity(),video.class);
-        startActivity(i);
-    }
+
 
 }

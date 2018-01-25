@@ -37,9 +37,9 @@
 
     <string-array name="nav_item_activity_titles">
         <item>Home</item>
-        <item>Most Popular</item>
+        <item>History</item>
         <item>My Account</item>
-        <item>Notifications</item>
+        <item>Liked</item>
         <item>Settings</item>
     </string-array>
 

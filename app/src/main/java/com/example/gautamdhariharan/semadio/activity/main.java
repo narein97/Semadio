@@ -27,6 +27,7 @@ import com.example.gautamdhariharan.semadio.fragment.HomeFragment;
 import com.example.gautamdhariharan.semadio.fragment.NotificationsFragment;
 import com.example.gautamdhariharan.semadio.fragment.MyAccountFragment;
 import com.example.gautamdhariharan.semadio.fragment.SettingsFragment;
+import com.example.gautamdhariharan.semadio.fragment.likedFragment;
 import com.example.gautamdhariharan.semadio.other.CircleTransform;
 import com.miguelcatalan.materialsearchview.MaterialSearchView;
 
@@ -206,8 +207,8 @@ public class main extends AppCompatActivity {
                 return maFragment;
             case 3:
                 // notifications fragment
-                NotificationsFragment notificationsFragment = new NotificationsFragment();
-                return notificationsFragment;
+                likedFragment l = new likedFragment();
+                return l;
 
             case 4:
                 // settings fragment
