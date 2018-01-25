@@ -22,8 +22,8 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 import com.example.gautamdhariharan.semadio.R;
+import com.example.gautamdhariharan.semadio.fragment.HistoryFragment;
 import com.example.gautamdhariharan.semadio.fragment.HomeFragment;
-import com.example.gautamdhariharan.semadio.fragment.MostPopularFragment;
 import com.example.gautamdhariharan.semadio.fragment.NotificationsFragment;
 import com.example.gautamdhariharan.semadio.fragment.MyAccountFragment;
 import com.example.gautamdhariharan.semadio.fragment.SettingsFragment;
@@ -198,7 +198,7 @@ public class main extends AppCompatActivity {
                 return homeFragment;
             case 1:
                 // photos
-                MostPopularFragment mpFragment = new MostPopularFragment();
+                HistoryFragment mpFragment = new HistoryFragment();
                 return mpFragment;
             case 2:
                 // movies fragment
