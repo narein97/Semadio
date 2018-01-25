@@ -3,9 +3,7 @@ package com.example.gautamdhariharan.semadio.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
@@ -54,9 +52,9 @@ public class main extends AppCompatActivity {
 
     // tags used to attach the fragments
     private static final String TAG_HOME = "home";
-    private static final String TAG_MP = "most popular";
+    private static final String TAG_HIST = "history";
     private static final String TAG_MA = "my account";
-    private static final String TAG_NOTIFICATIONS = "notifications";
+    private static final String TAG_LIKED = "liked";
     private static final String TAG_SETTINGS = "settings";
     public static String CURRENT_TAG = TAG_HOME;
 
@@ -244,17 +242,17 @@ public class main extends AppCompatActivity {
                         navItemIndex = 0;
                         CURRENT_TAG = TAG_HOME;
                         break;
-                    case R.id.nav_mp:
+                    case R.id.history:
                         navItemIndex = 1;
-                        CURRENT_TAG = TAG_MP;
+                        CURRENT_TAG = TAG_HIST;
                         break;
                     case R.id.nav_ma:
                         navItemIndex = 2;
                         CURRENT_TAG = TAG_MA;
                         break;
-                    case R.id.nav_notifications:
+                    case R.id.liked:
                         navItemIndex = 3;
-                        CURRENT_TAG = TAG_NOTIFICATIONS;
+                        CURRENT_TAG = TAG_LIKED;
                         break;
                     case R.id.nav_settings:
                         navItemIndex = 4;
@@ -268,6 +266,10 @@ public class main extends AppCompatActivity {
                     case R.id.privacy_policy:
                         // launch new intent instead of loading fragment
                         startActivity(new Intent(main.this, PrivacyPolicy.class));
+                        drawer.closeDrawers();
+                        return true;
+                    case R.id.contact:
+                        startActivity(new Intent(main.this, contactUs.class));
                         drawer.closeDrawers();
                         return true;
                     default:
